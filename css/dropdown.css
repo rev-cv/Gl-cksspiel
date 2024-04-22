@@ -1,0 +1,168 @@
+
+.dropdown {
+    font-size: 1em;
+    background: transparent;
+    cursor: default;
+    position: relative;
+    transition: all 200ms ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+
+    margin-right: .5em;
+
+    border-radius: .25em;
+}
+
+.dropdown > .dd-content {
+    display: flex;
+    align-items: center;
+    padding: .5em 2em .5em .5em;
+    white-space: nowrap;
+    border: 1px solid var(--color-content-C);
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.dropdown > .dd-content > svg {
+    width: .8em;
+    height: .8em;
+    opacity: .8;
+}
+
+.dropdown > .dd-content > span {
+    padding: 0 .6em;
+    color: var(--color-content-A);
+}
+
+.dropdown > .substrate {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: .6em;
+    transition: all 200ms ease-out;
+
+    padding-top: 1em;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.85), translateY(.85);
+}
+
+.dropdown > .substrate > .dd-menu {
+    background-color: #fff;
+    border-radius: .6em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 10px 20px 0px #0000000D;
+    overflow: hidden;
+}
+
+.dropdown > .substrate > .dd-menu > button {
+    font-size: 1em;
+    background-color: transparent;
+    color: var(--color-content-B);
+    padding: .6em;
+    position: relative;
+    border-radius: .6em;
+    text-align: left;
+}
+
+.dropdown > .substrate > .dd-menu > button::after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--color-content-B);
+    opacity: 0;
+}
+
+.dropdown > .substrate > .dd-menu > button:hover::after {
+    opacity: .05;
+    transition: opacity 200ms ease-out;
+}
+
+/* ↓↓↓ hover on dropdown ↓↓↓ */
+
+.dropdown:hover:not(.disclosure)  {
+    background-color: var(--color-btn-accent-bg);
+}
+
+.dropdown:hover > .dd-content {
+    border-color: var(--color-btn-accent-bg);
+    border-radius: .25em;
+}
+
+.dropdown:hover:not(.disclosure) > .dd-content > span {
+    color: var(--color-content-accent);
+}
+
+.dropdown:hover:not(.disclosure) > .dd-content path {
+    stroke: #fff !important;
+}
+
+
+.dropdown:hover > .substrate {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1), translateY(1);
+}
+
+.dropdown:not(.disclosure) > .dd-content > svg:last-child {
+    margin: 0 0 0 .5em;
+    transition: .2s linear;
+
+    position: absolute;
+    right: .6em;
+}
+
+.dropdown:hover:not(.disclosure) > .dd-content > svg:last-child {
+    transform: rotate(-180deg);
+} 
+
+
+/*  */
+
+
+.dropdown.sort > .substrate {
+    width: 12em;
+    height: 11em;
+}
+
+.dropdown.deposit > .substrate {
+    width: 19em;
+    height: 11em;
+}
+
+.dropdown.lizenzen > .substrate {
+    width: 10em;
+    height: 11em;
+}
+
+.dropdown.disclosure > .substrate {
+    width: 23em;
+    height: 11em;
+}
+
+.disclosure:hover > .dd-content > span {
+    color: var(--color-btn-accent-bg);
+}
+
+
+
+
+.dropdown.disclosure > .dd-content {
+    border-color: transparent;
+}
+
+.disclosure > .substrate > .dd-menu > .message {
+    margin: 1em;
+    color: var(--color-content-A);
+    line-height: 1.05em;
+}

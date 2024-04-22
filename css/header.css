@@ -1,0 +1,32 @@
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+    padding: .8em;
+}
+
+header > .logo {
+    height: 100%;
+}
+
+header > .logo > svg {
+    height: 100%;
+    width: 8em;
+}
+
+header > nav {
+    display: flex;
+}
+
+header > nav > .point {
+    font-size: 1.15em;
+    color: var(--color-content);
+    margin: .6em;
+}
+
+header > nav > .point:hover {
+    color: var(--color-btn-accent-bg);
+}

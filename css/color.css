@@ -1,0 +1,17 @@
+:root {
+    --color-content: #000706;
+        --color-content-A: #000706;
+        --color-content-B: #000706;
+        --color-content-C: rgba(0, 7, 6, .4);
+        --color-content-accent: #fff;
+
+
+    --color-content: #000706;
+    --color-accent-bg: #0A514C;
+    --color-accent: #fff;
+
+    --color-btn-accent-bg: #0A514C;
+
+    --color-filter-bg: #D9E3E3;
+}
+
