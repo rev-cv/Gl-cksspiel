@@ -21,11 +21,9 @@ main > .offers > .navigator > .all-filters {
     display: flex;
 }
 
-
-
 #added-filters {
     display: flex;
-    font-size: 1rem;
+    font-size: .7rem;
     margin-top: .6em;
 }
 
@@ -39,6 +37,8 @@ main > .offers > .navigator > .all-filters {
     align-items: center;
 
     border-radius: 3px;
+
+    cursor: default;
 }
 
 #added-filters > .filter > button {
@@ -70,7 +70,7 @@ main > .offers > .navigator > .all-filters {
 
 
 #btn-set-filter {
-    font-size: 1em;
+    font-size: 1rem;
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
@@ -78,7 +78,7 @@ main > .offers > .navigator > .all-filters {
 }
 
 #btn-set-filter > button {
-    font-size: 1em;
+    font-size: .7em;
     display: flex;
     justify-content: center;
     align-items: center;

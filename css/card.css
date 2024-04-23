@@ -1,0 +1,404 @@
+#added-offers > .mark {
+    position: relative;
+    font-size: 1em;
+    background-color: red;
+    padding: .4em 1.2em;
+    font-weight: 700;
+    border-radius: .5em .5em 0 0;
+
+    display: flex;
+    align-items: center;
+}
+
+#added-offers > .mark > svg {
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+}
+
+#added-offers > .green {
+    background-color: rgba(39, 153, 85, .2);
+    color: #279955;
+}
+
+#added-offers > .orange {
+    background-color: rgba(237, 145, 72, .2);
+    color: #ED9148;
+}
+
+
+/* CARD */
+
+.card {
+    font-size: 1rem;
+    border: .1em solid transparent;
+    border-radius: .5em;
+    background-color: #fff;
+
+}
+
+#added-offers > .mark + .card {
+    border-radius: 0 0 .5em .5em;
+}
+
+.card:hover {
+    background-color: rgba(255, 225, 117, .15);
+    border-color: #FFE175;
+}
+
+.card > .subline-1 {
+    /* height: 8em; */
+    padding: .6em 0;
+
+    display: grid;
+    grid-template-columns: 1fr 6fr 5fr 5fr 9fr 6fr;
+    grid-gap: .7em;
+    padding-right: 1.2em;
+}
+
+
+
+
+/* ID */
+
+.card > .subline-1 > .block-id {
+    position: relative;
+    left: -.1em;
+
+    justify-self: start;
+    align-self: center;
+
+    width: 1.2em;
+    height: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #004540;
+    background-color: rgba(39, 153, 85, .15);
+}
+
+.card:hover > .subline-1 > .block-id {
+    background-color: #FFE175;
+}
+
+
+/* BLOCK */
+
+.card > .subline-1 > .block {
+    display: flex;
+    flex-direction: column;
+    padding: .6em 0;
+}
+
+.card > .subline-1 > .about > .line {
+    display: flex;
+    align-items: center;
+    margin: .2em 0;
+    font-size: .7em;
+}
+
+
+/* LOGO */
+
+.card > .subline-1 > .logo {
+    margin: 1.2em 0;
+    padding: .8em 0;
+
+    border: 1px solid #D9DADA;
+    border-radius: .25em;
+    background-color: #fff;
+}
+
+.card > .subline-1 > .logo > svg {
+    grid-row: 1 / -1;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+/* ABOUT */
+
+.card > .subline-1 > .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card > .subline-1 > .about > .line > svg {
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.card > .subline-1 > .about > .link > a {
+    color: #0A514C;
+    text-decoration: underline;
+}
+
+.card > .subline-1 > .about > .rating {
+    display: flex;
+    padding: .4em 1em .4em .4em;
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+.card > .subline-1 > .about > .expert > svg {
+    margin-left: .4em;
+}
+
+
+
+/* REGULATOR */
+
+.card > .subline-1 > .regulator {
+    background-color: #fff;
+    border-radius: .25em;
+    padding: 1.2em;
+    margin: .4em 0;
+}
+
+.card > .subline-1 > .regulator > .title {
+    font-size: .6em;
+    font-weight: 700;
+    margin-bottom: 1.3em;
+    grid-row: 1 / 2;
+    color: #000706;
+}
+
+.card > .subline-1 > .regulator > svg {
+    grid-row: 2 / -1;
+    align-self: center;
+    width: 100%;
+}
+
+
+
+/* SPEED */
+
+.card > .subline-1 > .speed {
+    background-color: #fff;
+    border-radius: .25em;
+    padding: 1.2em;
+    margin: .4em 0;
+}
+
+.card > .subline-1 > .speed > .title {
+    font-size: .6em;
+    font-weight: 700;
+    margin-bottom: 1.3em;
+    grid-row: 1 / 2;
+    color: #000706;
+}
+
+.card > .subline-1 > .speed > .view-speed {
+    grid-row: 2 / -1;
+    align-self: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.card > .subline-1 > .speed > .view-speed > svg {
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+}
+
+.card > .subline-1 > .speed > .view-speed > .value {
+    font-size: 1em;
+    font-weight: 700;
+    color: #000706;
+}
+
+.card > .subline-1 > .speed > .view-speed > .units {
+    font-size: .7em;
+    color: #4D4F4F;
+}
+
+
+/* GIFT */
+
+.card > .subline-1 > .gift {
+    background-color: #fff;
+    border-radius: .25em;
+    padding: 1.2em;
+    margin: .4em 0;
+}
+
+.card > .subline-1 > .gift > .title {
+    justify-self: start;
+
+    font-size: .6em;
+    font-weight: 700;
+    margin-bottom: 1.3em;
+    grid-row: 1 / 2;
+    color: #000706;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #FFE175;
+    border-radius: .25em;
+    padding: .4em 1em;
+}
+
+.card > .subline-1 > .gift > .title > svg {
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+}
+
+.card > .subline-1 > .gift > .descr {
+    grid-row: 2 / -1;
+    color: #000706;
+    font-weight: 700;
+}
+
+
+/* PLAY NOW */
+
+#play-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play-now > button {
+    font-size: .8em;
+    padding: 1.3em;
+    color: #fff;
+    background-color: #0A514C;
+    border-radius: 5px;
+}
+
+#play-now > button:hover {
+    background-color: #08413D;
+}
+
+
+
+/*  */
+
+.card > .btn-expand {
+
+    padding: 0 1em 1em 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 1em;
+}
+
+.card > .btn-expand::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 96%;
+    top: .05em;
+    background-color: #E6E6E6;
+    z-index: 1;
+}
+
+.card > .btn-expand > button {
+    z-index: 2;
+    font-size: .7em;
+    flex-grow: 0;
+    padding: 0 .5em;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover > .btn-expand > button {
+    background-color: #f6f2e0;
+    
+}
+
+.card > .btn-expand > button > svg {
+    rotate: 180deg;
+    margin-left: 0.4em;
+}
+
+.card.no-open > .btn-expand > button > svg {
+    rotate: 0deg;
+}
+
+/*  */
+
+.card > .subline-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .4em 2em;
+    padding: 1em;
+}
+
+.card.no-open > .subline-2 {
+    display: none;
+}
+
+.card > .subline-2 > .block .title {
+    font-size: .6em;
+    color: #4D4F4F;
+    margin-bottom: 1em;
+}
+
+.card > .subline-2 > .block > .check-list {
+    padding-top: 0.5em;
+}
+
+.card > .subline-2 > .block > .check-list > .point {
+    display: flex;
+    align-items: center;
+    font-size: .6em;
+    margin: .8em 0;
+}
+
+.card > .subline-2 > .block > .check-list > .point > svg {
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+}
+
+.card > .subline-2 > .block > .check-list > .point > span {
+    color: #000706;
+} 
+
+.card > .subline-2 > .block > .payment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2em);
+    grid-gap: .2em;
+}
+
+.card > .subline-2 > .block > .payment > svg {
+    justify-self: center;
+    align-self: center;
+}
+
+.card > .subline-2 > .block.other {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card > .subline-2 > .block.other .text {
+    font-size: .8em;
+    font-weight: 700;
+    color: #000706;
+}
+
+.card > .subline-2 > .age18 {
+    grid-column: 1 / -1;
+    font-size: .6em;
+    color: #4D4F4F;
+    padding-top: 1.6em;
+    border-top: 1px solid #E6E6E6;
+}
+
+
