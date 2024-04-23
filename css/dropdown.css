@@ -69,7 +69,7 @@
 
 
 .dropdown > .substrate > .dd-menu > form {
-    margin: 1rem;
+    margin: 1rem .2em 1rem 1rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -145,18 +145,18 @@
 
 
 .dropdown.sort > .substrate {
-    width: 12em;
-    height: 11em;
+    width: 14em;
+    height: 12em;
 }
 
 .dropdown.deposit > .substrate {
     width: 19em;
-    height: 11em;
+    height: 12em;
 }
 
 .dropdown.lizenzen > .substrate {
     width: 23em;
-    height: 11em;
+    height: 12em;
 }
 
 .dropdown.disclosure > .substrate {

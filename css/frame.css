@@ -13,4 +13,5 @@ header {
 main {
     flex-grow: 1;
     margin: 0 .8em;
+	padding-bottom: 10em;
 }

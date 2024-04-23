@@ -23,13 +23,14 @@ main > .offers > .navigator > .all-filters {
 
 #added-filters {
     display: flex;
+    flex-wrap: wrap;
     font-size: .7rem;
     margin-top: .6em;
 }
 
 #added-filters > .filter {
     background-color: var(--color-filter-bg);
-    margin-right: 0.6em;
+    margin: 0 .6em .6em 0;
     padding: .2em .6em;
 
     display: flex;
@@ -61,7 +62,7 @@ main > .offers > .navigator > .all-filters {
 #clear-filters {
     background-color: transparent;
     color: var(--color-content-A);
-    margin-left: 1em;
+    margin: 0 0 .6em 1em;
 }
 
 #clear-filters:hover {
