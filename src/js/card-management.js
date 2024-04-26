@@ -40,14 +40,11 @@ function setCard(obj) {
                 </div>
 
                 <div class="line link">
-                    <a href="/">Midas Testebricht</a>
+                    <a href="#">Midas Testebricht</a>
                 </div>
             </div>
 
-            <div class="block regulator">
-                <div class="title">Regulation</div>
-                ${regulator}
-            </div>
+            ${obj.isRegulator ? regulator : speed}
 
             <div class="block gift">
                 <div class="title">
@@ -101,16 +98,13 @@ function setCard(obj) {
                 <div class="title">Zahlungsarten</div>
 
                 <div class="payment">
-                    ${payments.slice(0, 5).join(" ")}
+
+                    ${payments.map(elem => '<div class="canvas">' + elem + "</div>").slice(0, 5).join(" ")}
 
                     <div class="dropdown">
-                        <div class="dd-content">
-                            <span>+8</span>
-                        </div>
-                        <div class="substrate">
-                            <div class="dd-menu">
-                                ${payments.slice(6).join(" ")}
-                            </div>
+                        <div class="btn-drop">+${payments.slice(5).length}</div>
+                        <div class="content">
+                            <div>${payments.map(elem => '<div class="canvas">' + elem + "</div>").slice(5).join(" ")}</div>
                         </div>
                     </div>
                 </div>
@@ -120,7 +114,7 @@ function setCard(obj) {
                 <div class="title">Krypto-Zahlungen</div>
 
                 <div class="payment">
-                    ${kryptos.join(" ")}
+                    ${kryptos.map(elem => '<div class="canvas">' + elem + "</div>").join(" ")}
                 </div>
             </div>
 
@@ -165,7 +159,7 @@ window.onload = function() {
     })
 
     document.querySelectorAll(".btn-expand").forEach(btn => {
-        btn.addEventListener("click", e => {
+        btn.onclick = e => {
             const isOpen = !e.currentTarget.parentNode.classList.contains("no-open")
             document.querySelectorAll(".card").forEach(card => {
                 if (card !== e.currentTarget.parentNode)
@@ -177,7 +171,7 @@ window.onload = function() {
             } else {
                 e.currentTarget.parentNode.classList.remove("no-open");
             }
-        })
+        }
     })
 }
 
@@ -194,13 +188,19 @@ offerLayout.addEventListener("click", e => {
     })
 
     document.querySelectorAll(".btn-expand").forEach(btn => {
-        btn.addEventListener("click", e => {
+        btn.onclick = e => {
+            const isOpen = !e.currentTarget.parentNode.classList.contains("no-open")
             document.querySelectorAll(".card").forEach(card => {
                 if (card !== e.currentTarget.parentNode)
                     card.classList.add("no-open")
             })
-            e.currentTarget.parentNode.classList.toggle("no-open");
-        })
+
+            if (isOpen){
+                e.currentTarget.parentNode.classList.add("no-open");
+            } else {
+                e.currentTarget.parentNode.classList.remove("no-open");
+            }
+        }
     })
 })
 

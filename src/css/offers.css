@@ -1,0 +1,354 @@
+
+main > .offers {
+    margin-top: 60px;
+}
+
+main > .offers > .title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000706;
+    line-height: 33.6px;
+    letter-spacing: -1.02px;
+    word-spacing: 0;
+    margin-bottom: 32px;
+}
+
+
+
+.all-filters {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.all-filters > .dropdown {
+    margin-right: 8px;
+}
+
+.all-filters > .dropdown > .btn-drop {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0 20px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid rgba(0, 7, 6, .4);
+
+    cursor: pointer;
+}
+
+.all-filters > .dropdown > .btn-drop > svg + span,
+.all-filters > .dropdown > .btn-drop > span + svg {
+    margin-left: 8px;
+}
+
+.all-filters > .dropdown > .btn-drop > svg {
+    width: 16px;
+    height: 16px;
+}
+
+.all-filters > .dropdown > .content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    transform: translateX(-10px);
+}
+
+.all-filters > .dropdown:hover > .content {
+    display: block;
+    z-index: 10;
+}
+
+.all-filters > .dropdown > .content > div {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, .3);
+}
+
+
+
+/* DROPBOX SORT */
+
+.all-filters > .dropdown.sort > .content {
+    width: calc(240px + 10px * 2);
+}
+
+.all-filters > .dropdown.sort > .content button {
+    background-color: transparent;
+    color: #000706;
+    font-size: 14px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    height: 20px;
+    margin: 3px 0;
+}
+
+.all-filters > .dropdown.sort > .content button:hover {
+    color: #0A514C;
+}
+
+.all-filters > .dropdown.sort > .content button > svg {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+}
+
+.all-filters > .dropdown.sort > .content button:hover > svg {
+    opacity: 1;
+}
+
+
+
+/* DROPBOX DEPOSIT & LIZENZEN */
+
+.all-filters > .dropdown.deposit > .content,
+.all-filters > .dropdown.lizenzen > .content {
+    width: 376px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.all-filters > .dropdown.deposit > .content {
+    width: 194px;
+}
+
+.all-filters > .dropdown.deposit > .content > div,
+.all-filters > .dropdown.lizenzen > .content > div {
+    padding-right: 7px;
+}
+
+.all-filters > .dropdown.deposit > .content > div > form,
+.all-filters > .dropdown.lizenzen > .content > div > form {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.all-filters > .dropdown.deposit > .content > div > form > div,
+.all-filters > .dropdown.lizenzen > .content > div > form > div {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.all-filters > .dropdown.deposit input[type="checkbox"],
+.all-filters > .dropdown.lizenzen input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s all linear;
+    position: relative;
+    line-height: 20px;
+
+    margin-right: 8px;
+}
+
+.all-filters > .dropdown.deposit input[type="checkbox"]:checked,
+.all-filters > .dropdown.lizenzen input[type="checkbox"]:checked {
+    border-color: var(--color-accent-bg);
+    background: var(--color-accent-bg);
+}
+
+.all-filters > .dropdown.deposit input[type="checkbox"]:after,
+.all-filters > .dropdown.lizenzen input[type="checkbox"]:after {
+    content: "\2714";
+    color: #fff;
+    display: none; /*flex*/
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 1px;
+}
+
+.all-filters > .dropdown.deposit input[type="checkbox"]:checked:after,
+.all-filters > .dropdown.lizenzen input[type="checkbox"]:checked:after {
+    display: flex;
+}
+
+.all-filters > .dropdown.deposit label,
+.all-filters > .dropdown.lizenzen label {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.all-filters > .dropdown.deposit *::-webkit-scrollbar,
+.all-filters > .dropdown.lizenzen *::-webkit-scrollbar {
+	width: 2px;
+}
+
+.all-filters > .dropdown.deposit *::-webkit-scrollbar-track,
+.all-filters > .dropdown.lizenzen *::-webkit-scrollbar-track {
+	background-color: #E6E6E6;
+    border-radius: .10rem;
+}
+
+.all-filters > .dropdown.deposit *::-webkit-scrollbar-thumb,
+.all-filters > .dropdown.lizenzen *::-webkit-scrollbar-thumb {
+	background-color: #999C9C;
+    border-radius: .10rem;
+}
+
+.all-filters > .dropdown.deposit *::-webkit-scrollbar-corner,
+.all-filters > .dropdown.lizenzen *::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+
+
+/* DROPBOX DISCLOSURE */
+
+.all-filters > .dropdown.disclosure > .btn-drop {
+    border: none;
+    font-weight: 400;
+    padding: 5px;
+    color: #4D4F4F;
+}
+
+.all-filters > .dropdown.disclosure:hover > .btn-drop {
+    color: #0A514C;
+}
+
+.all-filters > .dropdown.disclosure > .btn-drop > svg {
+    width: 20px;
+    height: 20px;
+}
+
+.all-filters > .dropdown.disclosure > .btn-drop path {
+    stroke: #4D4F4F;
+}
+
+.all-filters > .dropdown.disclosure:hover > .btn-drop path {
+    stroke: #0A514C;
+}
+
+.all-filters > .dropdown.disclosure > .content {
+    width: 460px;
+    height: 185px;
+}
+
+.all-filters > .dropdown.disclosure > .content > div {
+    color: #4D4F4F;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+
+
+#added-filters {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+#added-filters > .filter {
+    background-color: var(--color-filter-bg);
+    margin: 0 4px 4px 0;
+    padding: 4px 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 3px;
+
+    cursor: default;
+}
+
+#added-filters > .filter > span {
+    color: #000706;
+    line-height: 20px;
+}
+
+#added-filters > .filter > button {
+    --size: 1.16em;
+    width: var(--size);
+    height: var(--size);
+    background-color: transparent;
+
+    display: flex;
+
+    margin-left: 8px;
+}
+
+#added-filters > .filter > button > svg {
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+#clear-filters {
+    background-color: transparent;
+    color: var(--color-content-A);
+    margin: auto 0 auto 24px;
+}
+
+#clear-filters:hover {
+    color: var(--color-btn-accent-bg);
+}
+
+
+#btn-set-filter {
+    font-size: 1rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#btn-set-filter > button {
+    font-size: .7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 1em;
+    background-color: transparent;
+    border: 1px solid var(--color-content-C);
+    border-radius: .25em;
+}
+
+#btn-set-filter > button > span {
+    font-weight: 700;
+    color: var(--color-content-A);
+}
+
+#btn-set-filter > button > svg {
+    margin-right: .6em;
+}
+
+#btn-set-filter > button:hover {
+    background-color: var(--color-btn-accent-bg);
+    border-color: var(--color-btn-accent-bg);
+}
+
+#btn-set-filter > button:hover > span {
+    color: #fff;
+}
+
+#btn-set-filter > button:hover path {
+    stroke: #fff;
+}
+
+

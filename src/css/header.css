@@ -4,17 +4,19 @@ header {
     justify-content: center;
     align-items: center;
 
-    font-size: 1rem;
-    padding: .8em;
+    font-size: 16px;
+    padding: 16px 0;
 }
 
 header > .logo {
     height: 100%;
+    margin: 0 24px 8px 0;
 }
 
 header > .logo > svg {
     height: 100%;
-    width: 8em;
+    width: 84px;
+    height: 48px;
 }
 
 header > nav {
@@ -22,11 +24,19 @@ header > nav {
 }
 
 header > nav > .point {
-    font-size: 1.15em;
+    font-size: 16px;
     color: var(--color-content);
-    margin: .6em;
+    padding: 6px 12px;
+    line-height: 22.4px;
+    margin: 7px 4px;
 }
 
 header > nav > .point:hover {
     color: var(--color-btn-accent-bg);
+}
+
+header > nav > .point > svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
 }

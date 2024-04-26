@@ -1,19 +1,24 @@
+#added-offers {
+    margin-top: 32px;
+    max-width: 1100px;
+}
+
 #added-offers > .mark {
     position: relative;
-    font-size: 1em;
-    background-color: red;
-    padding: .4em 1.2em;
-    font-weight: 700;
-    border-radius: .5em .5em 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 5px 5px 0 0;
 
     display: flex;
     align-items: center;
 }
 
 #added-offers > .mark > svg {
-    width: 1em;
-    height: 1em;
-    margin-right: .5em;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
 
 #added-offers > .green {
@@ -30,16 +35,15 @@
 /* CARD */
 
 .card {
-    font-size: 1rem;
-    border: .1em solid transparent;
-    border-radius: .5em;
+    margin-bottom: 12px;
+    border: 2px solid transparent;
+    border-radius: 5px;
     background-color: #fff;
-
-    margin-bottom: 1em;
+    cursor: default;
 }
 
 #added-offers > .mark + .card {
-    border-radius: 0 0 .5em .5em;
+    border-radius: 0 0 5px 5px;
 }
 
 .card:hover {
@@ -48,13 +52,13 @@
 }
 
 .card > .subline-1 {
-    /* height: 8em; */
     padding: .6em 0;
 
     display: grid;
-    grid-template-columns: 1fr 5fr 5fr 5fr 8fr 6fr;
-    grid-gap: .7em;
-    padding-right: 1.2em;
+    grid-template-columns: 40px 150px 170px 200px 260px 174px;
+    grid-template-rows: 140px;
+    grid-gap: 16px;
+    /* padding-right: 1.2em; */
 }
 
 
@@ -104,7 +108,7 @@
 /* LOGO */
 
 .card > .subline-1 > .logo {
-    margin: 1.2em 0;
+    margin: 13.5px 0;
     padding: .8em 0;
 
     border: 1px solid #D9DADA;
@@ -139,7 +143,7 @@
 .card > .subline-1 > .about > .rating {
     display: flex;
     padding: .4em 1em .4em .4em;
-    background-color: #fff;
+    background-color: #F6F5F4;
     align-self: flex-start;
 }
 
@@ -156,18 +160,26 @@
     border-radius: .25em;
     padding: 1.2em;
     margin: .4em 0;
+    align-items: flex-start
 }
 
 .card > .subline-1 > .regulator > .title {
-    font-size: .6em;
-    font-weight: 700;
-    margin-bottom: 1.3em;
-    grid-row: 1 / 2;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.8px;
+    margin-bottom: 16px;
     color: #000706;
+
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+
+    background-color: #F6F5F4;
+    border-radius: 3px;
+    padding: 4.5px 8px;
 }
 
 .card > .subline-1 > .regulator > svg {
-    grid-row: 2 / -1;
     align-self: center;
     width: 100%;
 }
@@ -177,82 +189,94 @@
 /* SPEED */
 
 .card > .subline-1 > .speed {
-    background-color: #fff;
+    background-color: #F6F5F4;
     border-radius: .25em;
     padding: 1.2em;
     margin: .4em 0;
+    align-items: flex-start
 }
 
 .card > .subline-1 > .speed > .title {
-    font-size: .6em;
-    font-weight: 700;
-    margin-bottom: 1.3em;
-    grid-row: 1 / 2;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.8px;
+    margin-bottom: 8px;
     color: #000706;
+
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 4.5px 8px;
 }
 
 .card > .subline-1 > .speed > .view-speed {
-    grid-row: 2 / -1;
-    align-self: center;
-
     display: flex;
-    align-items: center;
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .card > .subline-1 > .speed > .view-speed > svg {
-    width: 1em;
-    height: 1em;
+    width: 24px;
+    height: 24px;
     margin-right: .4em;
 }
 
 .card > .subline-1 > .speed > .view-speed > .value {
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 600;
     color: #000706;
 }
 
 .card > .subline-1 > .speed > .view-speed > .units {
     font-size: .7em;
     color: #4D4F4F;
+    align-self: flex-end;
 }
 
 
 /* GIFT */
 
 .card > .subline-1 > .gift {
-    background-color: #fff;
-    border-radius: .25em;
+    background-color: #F6F5F4;
+    border-radius: 5px;
     padding: 1.2em;
     margin: .4em 0;
+
+    align-items: flex-start
 }
 
 .card > .subline-1 > .gift > .title {
-    justify-self: start;
-
-    font-size: .6em;
-    font-weight: 700;
-    margin-bottom: 1.3em;
-    grid-row: 1 / 2;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.8px;
+    margin-bottom: 8px;
     color: #000706;
 
     display: flex;
+    flex-grow: 0;
     align-items: center;
 
     background-color: #FFE175;
-    border-radius: .25em;
-    padding: .4em 1em;
+    border-radius: 3px;
+    padding: 4.5px 8px;
 }
 
 .card > .subline-1 > .gift > .title > svg {
-    width: 1em;
-    height: 1em;
+    width: 16px;
+    height: 16px;
     margin-right: .5em;
 }
 
 .card > .subline-1 > .gift > .descr {
     grid-row: 2 / -1;
     color: #000706;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 
@@ -265,8 +289,8 @@
 }
 
 #play-now > button {
-    font-size: .8em;
-    padding: 1.3em;
+    font-size: 16px;
+    padding: 21px 32px;
     color: #fff;
     background-color: #0A514C;
     border-radius: 5px;
@@ -387,7 +411,7 @@
 
 .card > .subline-2 > .block.other .text {
     font-size: .8em;
-    font-weight: 700;
+    font-weight: 600;
     color: #000706;
 }
 
@@ -407,4 +431,78 @@
     color: #0A514C;
     border-radius: .25rem;
     width: 100%;
+}
+
+
+
+
+.card > .subline-2 > .block > .payment > .dropdown > .btn-drop {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0 20px;
+    height: 100%;
+    width: 100%;
+    
+    justify-items: center;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    color: #0A514C;
+    background-color: transparent;
+}
+
+.card > .subline-2 > .block > .payment > .dropdown:hover > .btn-drop {
+    color: #fff;
+    background-color: #0A514C;
+}
+
+.card > .subline-2 > .block > .payment > .canvas {
+    background-color: #F6F5F4;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card > .subline-2 > .block > .payment > .dropdown > .content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    transform: translateX(-10px);
+    z-index: 10;
+}
+
+.card > .subline-2 > .block > .payment > .dropdown:hover > .content {
+    display: block;
+}
+
+.card > .subline-2 > .block > .payment > .dropdown > .content > div {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 40px);
+    grid-gap: 4px;
+    
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, .3);
+}
+
+.card > .subline-2 > .block > .payment > .dropdown > .content > div > .canvas {
+    background-color: #F6F5F4;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -8,60 +8,50 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="src/css/color.css">
+    <link rel="stylesheet" type="text/css" href="src/css/frame.css">
+    <link rel="stylesheet" type="text/css" href="src/css/header.css">
+    <link rel="stylesheet" type="text/css" href="src/css/banner.css">
+    <link rel="stylesheet" type="text/css" href="src/css/offers.css">
+    <link rel="stylesheet" type="text/css" href="src/css/card.css">
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/color.css">
-    <link rel="stylesheet" type="text/css" href="css/frame.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/banner.css">
-    <link rel="stylesheet" type="text/css" href="css/offers.css">
-    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <script src="src/js/sprite-svg.js" defer></script>
+    <script src="src/js/list-casino.js" defer></script>
 
-    <script src="js/sprite-svg.js" defer></script>
-    <script src="js/list-casino.js" defer></script>
-
-    <script src="js/card-management.js" defer></script>
-    <script src="js/filter.management.js" defer></script>
+    <script src="src/js/card-management.js" defer></script>
+    <script src="src/js/filter.management.js" defer></script>
     
 </head>
 <body>
 
     <header>
-        <a href="." class="logo">
+        <a href="#" class="logo">
             <svg class="icon"><use xlink:href="#ico-logo"/></svg>
         </a>
-
         <nav>
-
-            <a href="." class="point">Bonus</a>
-
-            <!-- <div class="dropdown">
-                <div class="dd-content">
-                    <span>Casinos</span>
-                    <svg><use xlink:href="#ico-arrow"/></svg>
-                </div>
-                <div class="dd-menu">
-                    <a href=".">Casino 1</a>
-                    <a href=".">Casino 2</a>
-                    <a href=".">Casino 3</a>
-                </div>
-            </div> -->
-
-            <a href="." class="point">Spieler</a>
-            <a href="." class="point">WIN 24 Club</a>
-            <a href="." class="point">Karriere</a>
+            <a href="#" class="point">Bonus</a>
+            <a href="#" class="point">
+              Casinos
+              <svg><use xlink:href="#ico-arrow"/></svg>
+            </a>
+            <a href="#" class="point">Spieler</a>
+            <a href="#" class="point">WIN 24 Club</a>
+            <a href="#" class="point">Karriere</a>
         </nav>
     </header>
 
-    <main>
-        <div class="banner">
-            <div class="title">Online Casino Österreich - Beste Anbieter 2024</div>
-            <div class="description">Suchen Sie nach einem guten Online Casino? Bei Casino.at liegen Sie richtig! Hier finden Sie alle wichtigen Informationen und Tipps rund um das Casino Spiel im Internet oder in den Casinos Austria</div>
-            <div class="end">Finden Sie die besten Online Casinos in Österreich auf einen Blick!</div>
-        </div>
+    <div class="banner">
+      <div>
+        <div class="title">Online Casino Österreich - Beste Anbieter 2024</div>
+        <div class="description">Suchen Sie nach einem guten Online Casino? Bei Casino.at liegen Sie richtig! Hier finden Sie alle wichtigen Informationen und Tipps rund um das Casino Spiel im Internet oder in den Casinos Austria</div>
+        <div class="end">Finden Sie die besten Online Casinos in Österreich auf einen Blick!</div>
+      </div>
+    </div>
 
+    <main>
         <div class="offers">
             
             <div class="title">Die besten online Glücksspiel Angebote </div>
@@ -70,51 +60,102 @@
 
                 <div class="all-filters">
                     <div class="dropdown sort">
-                        <div class="dd-content">
-                            <span>Sort</span>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.28 5.9668L8.9333 10.3135C8.41997 10.8268 7.57997 10.8268 7.06664 10.3135L2.71997 5.9668" stroke="#000706" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                        <div class="btn-drop">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.96672 4.47998L4.48669 2L2.00671 4.47998" stroke="#000706" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.48669 14V2" stroke="#000706" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.03333 11.5195L11.5133 13.9995L13.9933 11.5195" stroke="#000706" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.5134 2V14" stroke="#000706" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>Sort</span>
                         </div>
-                        <div class="substrate">
-                            <div class="dd-menu">
-                                <button>Nach Bewertung</button>
-                                <button>Nach Höhe der Prämie</button>
-                                <button>Durch Neuheit</button>
+                        <div class="content">
+                            <div>
+                                <button>
+                                  Nach Bewertung
+                                  <svg class="icon"><use xlink:href="#ico-check-mini"/></svg>
+                                </button>
+                                <button>
+                                  Nach Höhe der Prämie
+                                  <svg class="icon"><use xlink:href="#ico-check-mini"/></svg>
+                                </button>
+                                <button>
+                                  Durch Neuheit
+                                  <svg class="icon"><use xlink:href="#ico-check-mini"/></svg>
+                                </button>
                             </div>
                         </div>
                     </div>
     
                     <div class="dropdown deposit">
-                        <div class="dd-content">
+                        <div class="btn-drop">
                             <span>Deposit Methoden</span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.28 5.9668L8.9333 10.3135C8.41997 10.8268 7.57997 10.8268 7.06664 10.3135L2.71997 5.9668" stroke="#000706" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <div class="substrate">
-                            <div class="dd-menu">
+                        <div class="content">
+                            <div>
                                 <form>
+                                  <div>
                                     <input type="checkbox" id="filter-A1" name="A1" value="yes" checked>
                                     <label for="filter-A1">A1</label>
-                                    <br>
+                                  </div>
+
+                                  <div>
                                     <input type="checkbox" id="filter-Binance" name="Binance" value="yes">
                                     <label for="filter-Binance">Binance</label>
-                                    <br>
+                                  </div>
+
+                                  <div>
                                     <input type="checkbox" id="filter-iDebit" name="iDebit" value="yes">
                                     <label for="filter-iDebit">iDebit</label>
-                                    <br>
+                                  </div>
+
+                                  <div>
                                     <input type="checkbox" id="filter-PayPal" name="PayPal" value="yes">
                                     <label for="filter-PayPal">PayPal</label>
-                                    <br>
+                                  </div>
+
+                                  <div>
                                     <input type="checkbox" id="filter-ROMA" name="ROMA" value="yes">
                                     <label for="filter-ROMA">ROMA</label>
-                                    <br>
+                                  </div>
+
+                                  <div>
                                     <input type="checkbox" id="filter-Sepa" name="Sepa" value="yes">
                                     <label for="filter-Sepa">Sepa</label>
-                                    <br>
+                                  </div>
+
+                                  <div>
                                     <input type="checkbox" id="filter-Slots" name="Slots" value="yes" checked>
                                     <label for="filter-Slots">Slots</label>
+                                  </div>
+
+                                  <div>
+                                    <input type="checkbox" id="filter-001" name="001" value="yes">
+                                    <label for="filter-001">001</label>
+                                  </div>
+
+                                  <div>
+                                    <input type="checkbox" id="filter-002" name="002" value="yes">
+                                    <label for="filter-002">002</label>
+                                  </div>
+
+                                  <div>
+                                    <input type="checkbox" id="filter-003" name="003" value="yes">
+                                    <label for="filter-003">003</label>
+                                  </div>
+
+                                  <div>
+                                    <input type="checkbox" id="filter-004" name="004" value="yes">
+                                    <label for="filter-004">004</label>
+                                  </div>
+
+                                  <div>
+                                    <input type="checkbox" id="filter-005" name="005" value="yes">
+                                    <label for="filter-005">005</label>
+                                  </div>
 
                                 </form>
                             </div>
@@ -123,35 +164,43 @@
     
                     <div class="dropdown lizenzen">
     
-                        <div class="dd-content">
+                        <div class="btn-drop">
                             <span>Lizenzen</span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.28 5.9668L8.9333 10.3135C8.41997 10.8268 7.57997 10.8268 7.06664 10.3135L2.71997 5.9668" stroke="#000706" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <div class="substrate">
-                            <div class="dd-menu">
+                        <div class="content">
+                            <div>
                                 <form>
+                                  <div>
                                     <input type="checkbox" id="filter-MGA" name="MGA" value="yes" checked>
                                     <label for="filter-MGA">Malta Gaming Authority (MGA)</label>
-                                    <br>
+                                  </div>
+                                  <div>
                                     <input type="checkbox" id="filter-Gibraltar" name="Gibraltar" value="yes">
                                     <label for="filter-Gibraltar">Gibraltar Gambling Commission</label>
-                                    <br>
+                                  </div>
+                                  <div>
                                     <input type="checkbox" id="filter-Curacao" name="Curacao" value="yes">
                                     <label for="filter-Curacao">Curacao eGaming</label>
-                                    <br>
+                                  </div>
+                                  <div>
                                     <input type="checkbox" id="filter-Kahnawake" name="Kahnawake" value="yes">
                                     <label for="filter-Kahnawake">Kahnawake Gaming Commission</label>
-                                    <br>
+                                  </div>
+                                  <div>
                                     <input type="checkbox" id="filter-Swedish" name="Swedish" value="yes">
                                     <label for="filter-Swedish">Swedish Gambling Authority</label>
-                                    <br>
+                                  </div>
+                                  <div>
                                     <input type="checkbox" id="filter-Danish" name="Danish" value="yes">
                                     <label for="filter-Danish">Danish Gambling Authority</label>
-                                    <br>
+                                  </div>
+                                  <div>
                                     <input type="checkbox" id="filter-Jersey" name="Jersey" value="yes">
                                     <label for="filter-Jersey">New Jersey Division of Gaming Enforcement</label>
+                                  </div>
                                 </form>
 
                             </div>
@@ -159,14 +208,14 @@
                     </div>
 
                     <div class="dropdown bonusprogramm">
-                        <div class="dd-content">
+                        <div class="btn-drop">
                             <span>Bonusprogramm</span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.28 5.9668L8.9333 10.3135C8.41997 10.8268 7.57997 10.8268 7.06664 10.3135L2.71997 5.9668" stroke="#000706" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <div class="substrate">
-                            <div class="dd-menu">
+                        <div class="content">
+                            <div>
                                 <button>001</button>
                                 <button>002</button>
                                 <button>003</button>
@@ -179,21 +228,22 @@
                     </div>
 
                     <div class="dropdown disclosure">
-                        <div class="dd-content">
-                            <span>Affilate Disclosure</span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.99984 18.3327C14.5832 18.3327 18.3332 14.5827 18.3332 9.99935C18.3332 5.41602 14.5832 1.66602 9.99984 1.66602C5.4165 1.66602 1.6665 5.41602 1.6665 9.99935C1.6665 14.5827 5.4165 18.3327 9.99984 18.3327Z" stroke="#0A514C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10 6.66602V10.8327" stroke="#0A514C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9.99561 13.334H10.0031" stroke="#0A514C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div class="substrate">
-                            <div class="dd-menu">
-                                <div class="message">
-                                    Bei AustriaWin24 listen und empfehlen wir Casinos absolut kostenlos für Sie. Wenn Sie sich über unseren Partnerlink in einem Casino registrieren und eine Einzahlung tätigen, verdient AustriaWin24 eine Provision. Dies beeinflusst nicht die Objektivität unserer Bewertungen und Ressourcen, da wir eine vollständig unabhängige Vergleichsseite für Online-Casinos sind.
-                                </div>
-                            </div>
-                        </div>
+
+                      <div class="btn-drop">
+                          <span>Affilate Disclosure</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M9.99984 18.3327C14.5832 18.3327 18.3332 14.5827 18.3332 9.99935C18.3332 5.41602 14.5832 1.66602 9.99984 1.66602C5.4165 1.66602 1.6665 5.41602 1.6665 9.99935C1.6665 14.5827 5.4165 18.3327 9.99984 18.3327Z" stroke="#0A514C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10 6.66602V10.8327" stroke="#0A514C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M9.99561 13.334H10.0031" stroke="#0A514C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </div>
+
+                      <div class="content">
+                          <div>
+                            Bei AustriaWin24 listen und empfehlen wir Casinos absolut kostenlos für Sie. Wenn Sie sich über unseren Partnerlink in einem Casino registrieren und eine Einzahlung tätigen, verdient AustriaWin24 eine Provision. Dies beeinflusst nicht die Objektivität unserer Bewertungen und Ressourcen, da wir eine vollständig unabhängige Vergleichsseite für Online-Casinos sind.
+                          </div>
+                      </div>
+
                     </div>
 
                     <div id="btn-set-filter">
